@@ -27,7 +27,7 @@ namespace Longest_Common_Prefix
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(LongestCommonPrefix(new string[] {"flower", "flow", "flight"}));
+            Console.WriteLine(LongestCommonPrefix(new string[] { "flower", "flow", "flight" }));
             Console.ReadLine();
         }
 

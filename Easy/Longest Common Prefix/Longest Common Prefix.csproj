@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E74608BA-BCF2-4BAC-8B96-19BAB62AF8CA}</ProjectGuid>
+    <ProjectGuid>{BD06DF49-5EA6-412D-9353-59056FBBBA2D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Longest_Common_Prefix</RootNamespace>
     <AssemblyName>Longest Common Prefix</AssemblyName>
