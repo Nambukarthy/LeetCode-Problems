@@ -21,7 +21,7 @@ Constraints:
 strs[i] consists of only lower-case English letters.
  */
 
-namespace Longest_Common_Prefix
+namespace LongestCommonPrefix
 {
     class Program
     {

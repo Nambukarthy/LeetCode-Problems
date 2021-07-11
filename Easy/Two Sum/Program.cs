@@ -28,7 +28,7 @@ Constraints:
 Only one valid answer exists.
 */
 
-namespace Two_Sum
+namespace TwoSum
 {
     class Program
     {

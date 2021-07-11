@@ -36,7 +36,7 @@ Constraints:
 s consists of parentheses only '()[]{}'.
 */
 
-namespace Valid_Parentheses
+namespace ValidParentheses
 {
     class Program
     {

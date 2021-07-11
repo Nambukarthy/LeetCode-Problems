@@ -28,7 +28,7 @@ Constraints:
 -231 <= x <= 231 - 1
  */
 
-namespace Palindrome_Number
+namespace PalindromeNumber
 {
     class Program
     {

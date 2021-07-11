@@ -26,7 +26,7 @@ Constraints:
 -231 <= x <= 231 - 1
 */
 
-namespace Reverse_Integer
+namespace ReverseInteger
 {
     class Program
     {

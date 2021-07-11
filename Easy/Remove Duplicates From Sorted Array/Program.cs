@@ -45,7 +45,7 @@ Constraints:
 nums is sorted in non-decreasing order.
 */
 
-namespace Remove_Duplicates_From_Sorted_Array
+namespace RemoveDuplicatesFromSortedArray
 {
     class Program
     {

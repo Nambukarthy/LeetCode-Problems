@@ -22,7 +22,7 @@ The number of nodes in both lists is in the range [0, 50].
 Both l1 and l2 are sorted in non-decreasing order.
 */
 
-namespace Merge_Two_Sorted_Linked_List
+namespace MergeTwoSortedLinkedList
 {
     class Program
     {
