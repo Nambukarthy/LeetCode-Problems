@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valid Parentheses", "Easy\V
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merge Two Sorted Linked List", "Easy\Merge Two Sorted Linked List\Merge Two Sorted Linked List.csproj", "{52852EFC-367F-4FE9-B0D7-A7038903FAD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Remove Duplicates From Sorted Array", "Easy\Remove Duplicates From Sorted Array\Remove Duplicates From Sorted Array.csproj", "{560CEFEF-BFB1-481F-B208-62136077ADC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{52852EFC-367F-4FE9-B0D7-A7038903FAD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52852EFC-367F-4FE9-B0D7-A7038903FAD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52852EFC-367F-4FE9-B0D7-A7038903FAD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{560CEFEF-BFB1-481F-B208-62136077ADC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{560CEFEF-BFB1-481F-B208-62136077ADC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{560CEFEF-BFB1-481F-B208-62136077ADC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{560CEFEF-BFB1-481F-B208-62136077ADC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +75,7 @@ Global
 		{BD06DF49-5EA6-412D-9353-59056FBBBA2D} = {5FC413F3-F2E1-45BE-8926-AB08F00B955B}
 		{2E18DC0F-2B44-4D93-B469-D9BBD6BDE733} = {5FC413F3-F2E1-45BE-8926-AB08F00B955B}
 		{52852EFC-367F-4FE9-B0D7-A7038903FAD0} = {5FC413F3-F2E1-45BE-8926-AB08F00B955B}
+		{560CEFEF-BFB1-481F-B208-62136077ADC3} = {5FC413F3-F2E1-45BE-8926-AB08F00B955B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A541FC7-2D9A-4597-8F22-CCF02A07F798}
