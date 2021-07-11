@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Two Sum", "Easy\Two Sum\Two
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse Integer", "Easy\Reverse Integer\Reverse Integer.csproj", "{FEBDAE17-3927-484D-802A-6EA70B89B2F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanToInt", "Easy\RomanToInt\RomanToInt.csproj", "{16EE5ECD-E32D-4693-9D26-C4BAC6FC21D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FEBDAE17-3927-484D-802A-6EA70B89B2F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEBDAE17-3927-484D-802A-6EA70B89B2F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEBDAE17-3927-484D-802A-6EA70B89B2F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16EE5ECD-E32D-4693-9D26-C4BAC6FC21D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16EE5ECD-E32D-4693-9D26-C4BAC6FC21D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16EE5ECD-E32D-4693-9D26-C4BAC6FC21D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16EE5ECD-E32D-4693-9D26-C4BAC6FC21D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E8BD5E48-E479-49A3-AB41-F93F0D40823A} = {5FC413F3-F2E1-45BE-8926-AB08F00B955B}
 		{FEBDAE17-3927-484D-802A-6EA70B89B2F2} = {5FC413F3-F2E1-45BE-8926-AB08F00B955B}
+		{16EE5ECD-E32D-4693-9D26-C4BAC6FC21D7} = {5FC413F3-F2E1-45BE-8926-AB08F00B955B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A541FC7-2D9A-4597-8F22-CCF02A07F798}
