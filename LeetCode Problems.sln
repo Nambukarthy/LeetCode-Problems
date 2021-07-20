@@ -37,6 +37,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SortingAlgorithms", "Sortin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Problems", "Problems", "{18D91263-7D99-439B-97A7-E854AEB2BBC0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicLinkedList", "Others\LinkedList\BasicLinkedList\BasicLinkedList.csproj", "{C768EFDA-BB89-4FD8-A810-335ECB2853EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{29A6D6FC-54D0-4863-9115-4AE06CBC8241}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29A6D6FC-54D0-4863-9115-4AE06CBC8241}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29A6D6FC-54D0-4863-9115-4AE06CBC8241}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C768EFDA-BB89-4FD8-A810-335ECB2853EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C768EFDA-BB89-4FD8-A810-335ECB2853EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C768EFDA-BB89-4FD8-A810-335ECB2853EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C768EFDA-BB89-4FD8-A810-335ECB2853EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +107,7 @@ Global
 		{9BF58226-48BE-4E69-9F39-6291A4CB926C} = {92FCFB59-DE13-466D-9AF3-D27059A5F22E}
 		{FCF60A03-D25D-4D66-97A6-BADF39D13F44} = {92FCFB59-DE13-466D-9AF3-D27059A5F22E}
 		{18D91263-7D99-439B-97A7-E854AEB2BBC0} = {92FCFB59-DE13-466D-9AF3-D27059A5F22E}
+		{C768EFDA-BB89-4FD8-A810-335ECB2853EC} = {9BF58226-48BE-4E69-9F39-6291A4CB926C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A541FC7-2D9A-4597-8F22-CCF02A07F798}
