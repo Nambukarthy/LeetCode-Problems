@@ -46,7 +46,7 @@ namespace SearchInsertPosition
 
         }
 
-        public static int SearchInsert(int[] nums, int target)
+        static int SearchInsert(int[] nums, int target)
         {
             int result = 0;
             for (int i = 0; i < nums.Length; i++)
