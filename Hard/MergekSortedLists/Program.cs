@@ -34,14 +34,12 @@ lists[i] is sorted in ascending order.
 The sum of lists[i].length won't exceed 10^4.
 */
 
-
-/* --- Still one test case is failing which need to be fixed. --- */
 namespace MergekSortedLists
 {
     class Program
     {
         static void Main(string[] args)
-        {          
+        {
             ListNode l13 = new ListNode(5);
             ListNode l12 = new ListNode(4, l13);
             ListNode l1 = new ListNode(1, l12);
@@ -57,12 +55,13 @@ namespace MergekSortedLists
             ListNode l41 = new ListNode(8, l42);
             ListNode l4 = new ListNode(4, l41);
 
-            //ListNode[] input = new ListNode[] { l1, l2, l3, l4 };
+            ListNode l10 = new ListNode();
+            ListNode l11 = new ListNode();
 
-            //ListNode[] input = new ListNode[] { };
-
-            ListNode[] input = new ListNode[] { l1, };
-            var result = MergeKLists(input);
+            ListNode[] input = new ListNode[] { l1, l2, l3, l4};
+          
+            //var result = MergeKLists(input); //Approach 1
+            var result = MergeKListsWithAuxiliaryArray(input); //Approach 2
 
             while (result != null)
             {
@@ -73,6 +72,7 @@ namespace MergekSortedLists
             Console.ReadLine();
         }
 
+        //Solution 1 - this solution has time complexity issues. 
         static ListNode MergeKLists(ListNode[] lists)
         {
             ListNode TempList = null;
@@ -80,7 +80,7 @@ namespace MergekSortedLists
             ListNode CurrentList = null;
 
             if (lists.Length == 0)
-            {               
+            {
                 return MergedList;
             }
 
@@ -132,25 +132,57 @@ namespace MergekSortedLists
                 }
 
                 while (MergedList != null)
-                {                   
-                    AddLast(TempList, MergedList.val);                   
+                {
+                    AddLast(TempList, MergedList.val);
                     MergedList = MergedList.next;
                 }
 
                 while (CurrentList != null)
-                {                   
-                    AddLast(TempList, CurrentList.val);                    
+                {
+                    AddLast(TempList, CurrentList.val);
                     CurrentList = CurrentList.next;
                 }
 
                 MergedList = TempList;
-                TempList = null;              
+                TempList = null;
             }
             return MergedList;
         }
 
-        static void AddLast(ListNode result, int val)
+        //Solution 2 - with auxiliary array approach. 
+        static ListNode MergeKListsWithAuxiliaryArray(ListNode[] lists)
         {
+            if (lists.Length == 0) return null;
+            if (lists.Length == 1) return lists[0];
+
+            List<int> tempList = new List<int>();
+
+            for (int i = 0; i < lists.Length; i++)
+            {
+                if (lists[i] == null) continue;
+                while (lists[i].next != null)
+                {
+                    tempList.Add(lists[i].val);
+                    lists[i] = lists[i].next;
+                }
+                tempList.Add(lists[i].val);
+            }
+
+            if (tempList.Count == 0) { return null; }
+            var tempArray = tempList.ToArray();
+            var sortedArray = SortArray(tempArray);
+            var resultNode = new ListNode(sortedArray[0]);
+
+            for (int i = 1; i < sortedArray.Length; i++)
+            {
+                AddLast(resultNode, sortedArray[i]);
+            }
+            return resultNode;
+        }
+
+        #region Helper Methods
+        static void AddLast(ListNode result, int val)
+        {           
             ListNode temp = result;
             while (temp.next != null)
             {
@@ -158,6 +190,67 @@ namespace MergekSortedLists
             }
             temp.next = new ListNode(val, null);
         }
+        static int[] SortArray(int[] unSortedArray)
+        {
+            if (unSortedArray.Length < 2) { return unSortedArray; }
+
+            int mid = unSortedArray.Length / 2;
+
+            int[] leftArray = new int[mid];
+            int[] rightArray = new int[unSortedArray.Length - mid];
+
+            for (int i = 0; i < mid; i++)
+            {
+                leftArray[i] = unSortedArray[i];
+            }
+
+            for (int j = 0; j < rightArray.Length; j++)
+            {
+                rightArray[j] = unSortedArray[j + mid];
+            }
+
+            SortArray(leftArray);
+            SortArray(rightArray);
+            return MergeSort(leftArray, rightArray, unSortedArray);
+        }
+        static int[] MergeSort(int[] leftArray, int[] rightArray, int[] mergeArray)
+        {
+            int leftIndex = 0;
+            int rightIndex = 0;
+            int mergeIndex = 0;
+
+            while (leftIndex < leftArray.Length && rightIndex < rightArray.Length)
+            {
+                if (leftArray[leftIndex] <= rightArray[rightIndex])
+                {
+                    mergeArray[mergeIndex] = leftArray[leftIndex];
+                    leftIndex++;
+                }
+                else
+                {
+                    mergeArray[mergeIndex] = rightArray[rightIndex];
+                    rightIndex++;
+                }
+                mergeIndex++;
+            }
+
+            while (leftIndex < leftArray.Length)
+            {
+                mergeArray[mergeIndex] = leftArray[leftIndex];
+                leftIndex++;
+                mergeIndex++;
+            }
+
+            while (rightIndex < rightArray.Length)
+            {
+                mergeArray[mergeIndex] = rightArray[rightIndex];
+                rightIndex++;
+                mergeIndex++;
+            }
+
+            return mergeArray;
+        }
+        #endregion
     }
 
     class ListNode
