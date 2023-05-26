@@ -57,6 +57,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestPalindromicSubstring
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddBinary", "Easy\AddBinary\AddBinary.csproj", "{CB21BFBB-F528-4C04-B927-3FD6D67E2E5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringToInteger", "Medium\StringToInteger\StringToInteger.csproj", "{F6A065A6-C445-45F6-A6DF-D08073C82658}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -155,6 +157,10 @@ Global
 		{CB21BFBB-F528-4C04-B927-3FD6D67E2E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB21BFBB-F528-4C04-B927-3FD6D67E2E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB21BFBB-F528-4C04-B927-3FD6D67E2E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A065A6-C445-45F6-A6DF-D08073C82658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A065A6-C445-45F6-A6DF-D08073C82658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A065A6-C445-45F6-A6DF-D08073C82658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A065A6-C445-45F6-A6DF-D08073C82658}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -183,6 +189,7 @@ Global
 		{EAF4DDBC-D800-4A79-ABA5-05BBFF77B12E} = {5FC413F3-F2E1-45BE-8926-AB08F00B955B}
 		{E5301D18-A730-4D96-AF7E-E7A12F3F441D} = {0909F31C-D792-45B8-A1EF-ADC849C04486}
 		{CB21BFBB-F528-4C04-B927-3FD6D67E2E5C} = {5FC413F3-F2E1-45BE-8926-AB08F00B955B}
+		{F6A065A6-C445-45F6-A6DF-D08073C82658} = {0909F31C-D792-45B8-A1EF-ADC849C04486}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A541FC7-2D9A-4597-8F22-CCF02A07F798}
