@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClimbingStairs", "Easy\Clim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicatesFromSortedList", "Easy\RemoveDuplicatesFromSortedList\RemoveDuplicatesFromSortedList.csproj", "{0DEDEE19-33D4-4B43-8722-F367F48B3657}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSortedArray", "Easy\MergeSortedArray\MergeSortedArray.csproj", "{AD314AFC-4B3B-4AB2-A4DF-869DBD742C5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -179,6 +181,10 @@ Global
 		{0DEDEE19-33D4-4B43-8722-F367F48B3657}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DEDEE19-33D4-4B43-8722-F367F48B3657}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DEDEE19-33D4-4B43-8722-F367F48B3657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD314AFC-4B3B-4AB2-A4DF-869DBD742C5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD314AFC-4B3B-4AB2-A4DF-869DBD742C5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD314AFC-4B3B-4AB2-A4DF-869DBD742C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD314AFC-4B3B-4AB2-A4DF-869DBD742C5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -211,6 +217,7 @@ Global
 		{9A6208D4-25CE-42D5-A489-1F24AA4CB7D2} = {5FC413F3-F2E1-45BE-8926-AB08F00B955B}
 		{CDFAB4F4-FBFA-4F83-BBC6-63CE04853240} = {5FC413F3-F2E1-45BE-8926-AB08F00B955B}
 		{0DEDEE19-33D4-4B43-8722-F367F48B3657} = {5FC413F3-F2E1-45BE-8926-AB08F00B955B}
+		{AD314AFC-4B3B-4AB2-A4DF-869DBD742C5F} = {5FC413F3-F2E1-45BE-8926-AB08F00B955B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A541FC7-2D9A-4597-8F22-CCF02A07F798}
